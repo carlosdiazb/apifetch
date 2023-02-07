@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="login">
+        <p id="error-log" class="error"></p>
+        <h2>Login</h2>
+        <label for="name">Username</label><br>
+        <input type="text" id="name" name="name" /><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" />
+        <p id="register-href">Not register?</p>
+        <div id="button-login" class="button">LOGIN</div> 
+    </form>
+    <form id="register" class="register">
+        <p id="error-reg" class="error"></p>
+        <h2>Register</h2>
+        <label for="name2">Username</label><br>
+        <input type="text" id="name2" name="name2" /><br>
+        <label for="password2">Password</label><br>
+        <input type="password" id="password2" name="password2" />
+        <div class="flex-register">
+            <div id="button-register" class="button">REGISTER</div> 
+            <div id="button-back" class="button">BACK</div>
+        </div>
+        
+    </form>
+    <div class="container" id="container">
+        <p id="attemps0" class="error"></p>
+        <div class="flex-start">
+            <div class="tries"><span id="attemps">5</span> attemps</div>
+        </div><br>
+            <label for="expression">Regular expression</label><br>
+            <input type="text" id="expression" name="expression"/><br>
+            <p id="check" class="check">Checking...</p>
+            <div id="expression-value" class="expression-value"></div>
+            <input type="submit" id="button-expression" class="button" value="CHECK"></div> 
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
